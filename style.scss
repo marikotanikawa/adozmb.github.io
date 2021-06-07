@@ -1,0 +1,115 @@
+$titleColor: #273246;
+$baseColor: white;
+$myTextarea: #f8f8f8;
+$mytalk: #30ADFE;
+$apitalk: #E6E6E6;
+$icons:#FD5068;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    // margin: 30px auto;
+    background-color: $baseColor;
+}
+
+img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.title {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+
+    
+    .icon {
+        color: $icons;
+        font-size: 1.5rem;
+    }
+
+    .fa-chevron-left {
+        margin-left: 3px;
+        line-height: 50px;
+
+    }
+
+    .fa-font-awesome-flag {
+        margin-right: 3px;
+        line-height: 50px;
+
+    }
+}
+
+.chat-area {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 70vh;
+    overflow: scroll;
+    font-size: 14px;
+
+    .mycontent {
+        display: block;
+        text-align: right;
+
+    }
+
+    .mymassage {
+        background-color: $mytalk;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+}
+.replycontent {
+    display: block;
+    
+    .replymassage {
+        background-color: $apitalk;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 10px;
+
+    }
+}
+
+.chat-area::-webkit-scrollbar {
+    display: none;
+}
+
+.border {
+    border-top: $myTextarea;
+}
+.message-area {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5vh;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: $myTextarea;
+
+    #talkapi__input {
+        width: 80%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+       
+    }
+
+    #talkapi__request {
+        width: 20%;
+        border: none;
+        background-color: transparent;
+    }
+}
