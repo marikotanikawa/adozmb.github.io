@@ -42,14 +42,19 @@ function handler_request_reply(ev){
             replyimg.setAttribute('src',images[random]);
             
                         if(replyimg.src === 'https://marikotanikawa.github.io/adozmb.github.io/img/c.png'){
+                            console.log('a');
                             name.textContent='チャッキー';
                         } else if(replyimg.src === 'https://marikotanikawa.github.io/adozmb.github.io/img/f.png') {
+                            console.log('a');
                             name.textContent='フレディ';
                         } else if(replyimg.src === 'https://marikotanikawa.github.io/adozmb.github.io/img/j.png') {
+                            console.log('a');
                             name.textContent='ジェイソン';
                         } else if(replyimg.src === 'https://marikotanikawa.github.io/adozmb.github.io/img/m.png') {
+                            console.log('a');
                             name.textContent='ブギーマン';
                         } else if(replyimg.src === 'https://marikotanikawa.github.io/adozmb.github.io/img/p.png') {
+                            console.log('a');
                             name.textContent='ピンヘッド';
                         } 
         
