@@ -22,7 +22,7 @@ function handler_request_reply(ev){
     formdata.append('query',comment);
 
      /* リクエスト */
-    fetch('https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk',{
+    fetch('https://api.a3rt.recruit.co.jp/talk/v1/smalltalk',{
         method: 'post',
         body: formdata,
     }).then(response => {
